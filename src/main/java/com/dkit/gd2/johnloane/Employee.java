@@ -35,9 +35,72 @@ public class Employee
 //
 //    }
 
+        public boolean printUniqueNames(uniqueNames)
+    {
 
 
+        return uniqueEmployeeName.add(firstName);
 
+    }
+
+    private void printNameAndCount (NameAndCount)
+    {
+        String title = Employee.getFirstName();
+
+        String array[] = title.split(" ");
+
+        for (String s : array)
+
+            System.out.println(s + ", ");
+
+        Map<String, Integer> nameCountMap = new HashMap<>();
+
+        for (String word : array) {
+            Integer count = nameCountMap.get(word);
+            if (count != null) {
+                nameCountMap.put(word, count + 1);
+            } else {
+                nameCountMap.put(word, 1);
+            }
+        }
+
+        System.out.println("Count of 'of' : = " + nameCountMap.get("of"));
+    }
+
+
+    public  void getNextOnWaitingList(waitingList)
+    {
+
+
+        String array[] = title.split(" ");
+
+        for (String s: array)
+
+            System.out.println(s + ", ");
+
+        Map<String, ArrayList<Integer>> wordPositionMap = new HashMap<>();
+        int wordPosition = 0;
+
+        for (String word : array)
+        {
+            wordPosition++;
+            ArrayList positions = wordPositionMap.get(word);
+            if (positions != null)
+            {
+                positions.add(wordPosition);
+
+            }
+
+            else
+            {
+                ArrayList<Integer> list = new ArrayList<>();
+                list.add(wordPosition);
+                wordPositionMap.put(word,list);
+            }
+        }
+
+        System.out.println("Position of 'of' : = "+ wordPositionMap.get("of"));
+    }
 
     @Override
     public String toString()

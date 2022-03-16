@@ -54,7 +54,7 @@ public class App
 
 
 
-        NameAndCount();
+
 //        questionTwoPartD();
 
         //Question 3
@@ -72,36 +72,8 @@ public class App
 
 
 
-    //    public boolean printUniqueNames(String firstName)
-//    {
-//
-//
-//        return uniqueEmployeeName.add(firstName);
-//
-//    }
-    private void printNameAndCount (NameAndCount)
-        {
-            String title = Employee.getFirstName();
 
-            String array[] = title.split(" ");
 
-            for (String s : array)
-
-                System.out.println(s + ", ");
-
-            Map<String, Integer> nameCountMap = new HashMap<>();
-
-            for (String word : array) {
-                Integer count = nameCountMap.get(word);
-                if (count != null) {
-                    nameCountMap.put(word, count + 1);
-                } else {
-                    nameCountMap.put(word, 1);
-                }
-            }
-
-            System.out.println("Count of 'of' : = " + nameCountMap.get("of"));
-        }
 
 
 
