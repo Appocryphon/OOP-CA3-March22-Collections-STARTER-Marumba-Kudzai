@@ -9,10 +9,16 @@ import java.util.List;
  */
 public class App 
 {
+    Student students;
     public static void main( String[] args )
     {
+List<Student> students = new ArrayList<>();
+
         //Question 1
-        questionOnePartA();
+        students.add(new Student(1, "John Tayag",21));
+        students.add(new Student(2, "Sergej Zapivalovs",22));
+        students.add(new Student(3, "Bobert Pekala",21));
+        students.add(new Student(4, "Kudzai Marumba",24));
         questionOnePartB();
         questionOnePartC();
         questionOnePartD();
